@@ -21,7 +21,7 @@ export class AppComponent {
     this.isLoading = true;
     this.error = '';
     this.unitTestCode = '';
-    fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
+    fetch('https://api.openai.com/v1/engines/gpt-3.5-turbo/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
