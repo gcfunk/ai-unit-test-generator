@@ -2,18 +2,20 @@
     It contains a large text box for the user to paste in their code, a button with a label of "Generate Unit Tests"
     and a place to display the output. It should have nice margins and an ocean color palette -->
 <div class="app">
-        <label for="component-code">Paste angular component ts code here:</label>
-        <textarea id="component-code" class="form-control" rows="10" [(ngModel)]="componentCode"></textarea>
-        <button class="btn btn-primary" (click)="generateUnitTests()">Generate Unit Tests</button>
+    <label for="component-code">Paste angular component ts code here:</label>
+    <textarea id="component-code" class="form-control" rows="10" [(ngModel)]="componentCode"></textarea>
+    <button class="btn btn-primary" (click)="generateUnitTests()">Generate Unit Tests</button>
 
-        <div class="output">
-            <h3>Output</h3>
-            <div class="output-text">{{unitTestCode}}</div>
-            <h3>Errors</h3>
-            <div class="errors">{{error}}</div>
-        </div>
-
-        <div class="spinner" *ngIf="isLoading">
-            <i class="fa fa-spinner fa-spin"></i> Loading...
-        </div>
+    <div class="output">
+        <h3>Output</h3>
+        <div class="output-text">{{unitTestCode}}</div>
+        <h3>Errors</h3>
+        <div class="errors">{{error}}</div>
     </div>
+
+    <div class="spinner" *ngIf="isLoading">
+        <i class="fas fa-spinner fa-spin"></i> Loading...
+    </div>
+
+
+</div>
