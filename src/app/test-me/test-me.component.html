@@ -1,0 +1,11 @@
+<!-- button to sort by type -->
+<button (click)="sortPokemon('type')">Sort by Type</button>
+
+<!-- button to stort by size -->
+<button (click)="sortPokemon('size')">Sort by Size</button>
+
+<!-- list of sorted pokemon -->
+
+<div *ngFor="let pokemon of pokemon">
+  <p>{{pokemon.name}}</p>
+</div>
